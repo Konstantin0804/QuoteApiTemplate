@@ -11,9 +11,9 @@ class QuoteModel(db.Model):
         self.author_id = author.id
         self.quote = quote
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "quote": self.quote,
-            "author": self.author
-        }
+    #def to_dict(self):
+    #    return {
+    #        "id": self.id,
+    #        "quote": self.quote,
+    #        "author": self.author
+    #    }
