@@ -9,3 +9,4 @@ psycopg2-binary
 marshmallow==3.13.0
 marshmallow-sqlalchemy==0.26.1
 flask-marshmallow==0.14.0
+passlib==1.7.4

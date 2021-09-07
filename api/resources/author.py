@@ -7,14 +7,12 @@ class AuthorResource(Resource):
     def get(self, author_id=None):
         if author_id is None:
             authors = AuthorModel.query.all()
-            #authors_list = [author.to_dict() for author in authors]
             return authors_schema.dump(authors), 200
 
         author = AuthorModel.query.get(author_id)
         if not author:
             return f"Author id={author_id} not found", 404
         return author_schema.dump(author), 200
-        # return author.to_dict(), 200
 
 
     def post(self):
